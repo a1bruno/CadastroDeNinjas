@@ -24,6 +24,8 @@ public class NinjaModel {
 
     private int idade;
 
+    private String rank;
+
     @ManyToOne
     @JoinColumn(name = "missoes_id")
     private MissoesModel missao;
@@ -34,7 +36,8 @@ public class NinjaModel {
                 "id=" + id +
                 ", nome='" + nome + '\'' +
                 ", email='" + email + '\'' +
-                ", idade=" + idade +
+                ", idade=" + idade + '\'' +
+                ", rank=" + rank + '\'' +
                 ", missao=" + missao +
                 '}';
     }
